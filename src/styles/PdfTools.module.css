@@ -1,0 +1,113 @@
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+}
+
+.container h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.pdfOptionsSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pdfGroup, .optionsGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.pdfIcon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #f25022, #ff6347);
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #d84e47;
+    background-image: url('/icons/pdf-icon.png');
+    background-size: cover;
+  }
+
+.pdfIcon::before {
+    content: 'PDF';
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 5px;
+    position: absolute;
+    bottom: -10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+}
+
+.pdfIcon::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 40px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: rotate(-20deg); 
+}
+
+.tools {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.tools label {
+    margin-right: 10px;
+}
+
+.tools input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.dropdown {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.selectDropdown {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 200px;
+}
+
+.confirmButton {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #D84E47;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.confirmButton:hover {
+    background-color: #C23D3B;
+}
